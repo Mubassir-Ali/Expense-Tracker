@@ -11,7 +11,7 @@ export const IncomeExpenses = () => {
 
             <div>
             <h4>Expense</h4>
-            <p id="money-minus" className='money plus'>-$0.00</p>
+            <p id="money-minus" className='money minus'>-$0.00</p>
     
             </div>
             

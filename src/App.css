@@ -61,3 +61,39 @@ h4 {
 .inc-exp-container>div:first-of-type{
   border-right: 1px solid #dedede;
 }
+
+.money{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.plus{
+  color: #2ecc71;
+}
+
+.minus{
+  color: #c0392b;
+}
+
+ul{
+  list-style: none;
+}
+
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+
+}

@@ -2,6 +2,7 @@ import './App.css';
 import {Header} from './components/Header';
 import { Balance } from './components/Balance';
 import { IncomeExpenses } from './components/IncomeExpenses'
+import { TransictionList } from './components/TransictionList'
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Balance/>
     </div>
     <IncomeExpenses/>
+    <TransictionList/>
 
     
 
