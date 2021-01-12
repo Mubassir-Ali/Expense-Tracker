@@ -80,6 +80,11 @@ ul{
   list-style: none;
 }
 
+label{
+  display: inline-block;
+  margin: 10px 0;
+}
+
 .delete-btn{
   cursor: pointer;
   background-color: #e74c3c;
