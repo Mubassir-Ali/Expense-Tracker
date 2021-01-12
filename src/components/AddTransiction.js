@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 export const AddTransiction = () => {
+
+    const [text, setText] = useState('');
+    const [amount, setAmount] = useState(0);
+
+
+
     return (
         <>
         <h3>Add New Transiction</h3>
         <form>
         	<div className="form-container">
 			<label htmlFor="text">Text</label>
-			<input type='text' placeholder="Enter text..."/>
+			<input type='text' value={text} onChange={(e)=>setText(e.target.value)} placeholder="Enter text..."/>
         </div>
 
 
@@ -15,7 +22,7 @@ export const AddTransiction = () => {
 			<label htmlFor="amount">Amount<br/>
 				(negative-expense, positive-income)	</label>
 				
-			<input type="number" placeholder="Enter Amount"/>
+			<input type="number" value={amount} onChange={(e)=>setAmount(e.target.value)} placeholder="Enter Amount"/>
 
 			
 
