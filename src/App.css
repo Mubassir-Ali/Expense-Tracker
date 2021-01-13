@@ -17,15 +17,12 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  
 }
 
 .container {
   margin: 30px auto;
   width: 350px;
-
 }
-
 
 h1 {
   letter-spacing: 1px;
@@ -38,25 +35,18 @@ h3 {
   margin: 40px 0 10px;
 }
 
-h2{
-  text-align: center;
-
-}
-
 h4 {
   margin: 0;
   text-transform: uppercase;
 }
 
-.inc-exp-container{
-  
+.inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-
 }
 
 .inc-exp-container > div {
@@ -64,35 +54,32 @@ h4 {
   text-align: center;
 }
 
-.inc-exp-container>div:first-of-type{
+.inc-exp-container > div:first-of-type {
   border-right: 1px solid #dedede;
 }
 
-.money{
+.money {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
-.plus{
+.money.plus {
   color: #2ecc71;
 }
 
-.minus{
+.money.minus {
   color: #c0392b;
 }
 
-ul{
-  list-style: none;
-}
-
-label{
+label {
   display: inline-block;
   margin: 10px 0;
 }
+
 input[type='text'],
-input[type='number']{
-  border:1px solid #dedede;
+input[type='number'] {
+  border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
   font-size: 16px;
@@ -100,22 +87,22 @@ input[type='number']{
   width: 100%;
 }
 
-.btn{
-  width: 100%;
-  padding: 5px 10px;
+.btn {
+  cursor: pointer;
   background-color: #9c88ff;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
-  cursor: pointer;
+  display: block;
+  font-size: 16px;
   margin: 10px 0 30px;
   padding: 10px;
+  width: 100%;
 }
 
 .btn:focus,
-.delete-btn:focus{
+.delete-btn:focus {
   outline: 0;
-
 }
 
 .list {
@@ -143,10 +130,7 @@ input[type='number']{
   border-right: 5px solid #c0392b;
 }
 
-
-
-
-.delete-btn{
+.delete-btn {
   cursor: pointer;
   background-color: #e74c3c;
   border: 0;
@@ -160,6 +144,14 @@ input[type='number']{
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
-  
+}
 
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
 }
